@@ -1,6 +1,6 @@
-/* div, p, h1, h2, h3, h4, a, span, li {
+div, p, h1, h2, h3, h4, a, span, li {
 	border: 1px solid red;
-} */
+}
 
 a:hover {
 	opacity: .48;
@@ -155,16 +155,16 @@ a:hover {
 }
 
 .cards {
-	display: flex;
+	display: grid;
 	width: 920px;
-	flex-wrap: wrap;
+	padding-top: 60px;
+	grid-template-columns: repeat(auto-fill, 240px);
+	grid-gap: 60px 100px;
 }
 
 .cards__item {
 	width: 240px;
-	margin: 60px 100px 0 0;
 	text-align: center;
-	box-sizing: border-box;
 }
 
 .cards__item:nth-child(3n) {
